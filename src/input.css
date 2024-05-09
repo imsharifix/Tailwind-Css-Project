@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: "vazir";
+        src: url("/public/fonts/Vazirmatn-Regular.ttf");
+        
+    }
+    @font-face {
+        font-family: "vazir Medium";
+        src: url("/public/fonts/Vazirmatn-Medium.ttf");
+        
+    }
+    @font-face {
+        font-family: "vazir Bold";
+        src: url("/public/fonts/Vazirmatn-Bold.ttf");
+        
+    }
+}
+
+@layer components {
+    .products {
+        background-image: url(../images/body-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .swiper-button-prev-custom{
+        @apply cursor-pointer flex items-center justify-center w-9 h-9 md:w-10 rounded-full bg-white text-zinc-700 hover:bg-gray-300 dark:hover:bg-white dark:hover:text-black dark:bg-zinc-700 dark:text-white shadow-shadow-normal;
+    }
+    .swiper-button-next-custom{
+       @apply cursor-pointer flex items-center justify-center w-9 h-9 md:w-10 rounded-full bg-white text-zinc-700 hover:bg-gray-300 dark:hover:bg-white dark:hover:text-black dark:bg-zinc-700 dark:text-white shadow-shadow-normal;
+    }
+}
